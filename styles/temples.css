@@ -26,12 +26,12 @@ header {
     background-color: rgb(3, 3, 24);
 }
 
-header h1 {
+#site-title {
     color: white;
     padding: 25px 10px;
     font-size: larger;
     text-align: center;
-    margin: 0;
+    display: block;
 }
 
 #hamburger-btn {
