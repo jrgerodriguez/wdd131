@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta
+      name="description"
+      content="Temple Album, Jorge Menjivar Rodriguez, A photo album of temples of The Church of Jesus Christ of Latter-day Saints."
+    />
+    <meta name="author" content="Jorge Menjivar Rodriguez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        <nav id="primary-nav">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples of The Church of Jesus Christ of Latter-day Saints</h1>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Aba Nigeria Temple" loading="lazy" width="400" height="250">
+            <figcaption>Aba Nigeria</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Manti Utah Temple" loading="lazy" width="400" height="250">
+            <figcaption>Manti Utah</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Payson Utah Temple" loading="lazy" width="400" height="250">
+            <figcaption>Payson Utah</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Yigo Guam Temple" loading="lazy" width="400" height="250">
+            <figcaption>Yigo Guam</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Washington D.C. Temple" loading="lazy" width="400" height="250">
+            <figcaption>Washington D.C.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Mexico City Mexico Temple" loading="lazy" width="400" height="250">
+            <figcaption>Mexico City Mexico</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Star Valley Wyoming Temple" loading="lazy" width="400" height="250">
+            <figcaption>Star Valley Wyoming</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Rome Italy Temple" loading="lazy" width="400" height="250">
+            <figcaption>Rome Italy</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple.jpg" alt="Tokyo Japan Temple" loading="lazy" width="400" height="250">
+            <figcaption>Tokyo Japan</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p class="date_city"><span id="currentyear"></span> Jorge Menjivar San Salvador, El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js"></script>
+</body>
+</html>
