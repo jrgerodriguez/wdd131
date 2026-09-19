@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London – Jorge Menjivar</title>
+    <meta name="description" content="London, United Kingdom - WDD 131 – Dynamic Web Fundamentals, Place page." />
+    <meta name="author" content="Jorge Menjivar Rodriguez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <h1>London, United Kingdom</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 700px)"
+                    srcset="images/hero-large.webp"
+                    width="5184" height="3456">
+            <img class="hero"
+                 src="images/hero-small.webp"
+                 alt="Big Ben clock tower rising above neighboring buildings in London"
+                 width="2352" height="3920">
+        </picture>
+
+        <section class="data-card">
+            <h2>Data</h2>
+            <dl>
+                <div><dt>Area:</dt><dd>1,572 km²</dd></div>
+                <div><dt>Population:</dt><dd>8.9 million</dd></div>
+                <div><dt>Country:</dt><dd>United Kingdom</dd></div>
+                <div><dt>Language:</dt><dd>English</dd></div>
+                <div><dt>Currency:</dt><dd>Pound Sterling</dd></div>
+                <div><dt>Highest Point:</dt><dd>Westerham Heights</dd></div>
+            </dl>
+        </section>
+
+        <section class="weather-card">
+            <div class="weather-title">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Partly cloudy" width="40" height="40">
+            </div>
+            <dl>
+                <div><dt>Temperature:</dt><dd>8 °C</dd></div>
+                <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+                <div><dt>Wind:</dt><dd>13 km/h</dd></div>
+                <div><dt>Wind Chill:</dt><dd id="windchill">N/A</dd></div>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> Jorge Menjivar San Salvador, El Salvador</p>
+        <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+/* Global variables: Union Jack red for header/footer, navy for accents */
+:root {
+    --brand: #a50d25;
+    --accent: #012169;
+    --text-on-brand: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --font-main: 'Poppins', sans-serif;
+    --radius: 10px;
+    --gap: 20px;
+    --card-width: 260px;
+    --icon-size-small: 64px;
+    --icon-size-large: 40px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--text-on-brand);
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: larger;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.data-card,
+.weather-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 15px 20px;
+    margin: 0 5%;
+}
+
+.data-card h2,
+.weather-card h2 {
+    margin: 0 0 10px;
+    font-size: larger;
+    text-align: center;
+    color: var(--accent);
+}
+
+.weather-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-title h2 {
+    margin: 0;
+}
+
+/* Small view: the weather icon is the SVG <img> below the heading */
+.weather-title img {
+    width: var(--icon-size-small);
+    height: var(--icon-size-small);
+}
+
+dl {
+    margin: 0;
+}
+
+dl div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 4px 0;
+}
+
+dt {
+    font-weight: 600;
+    color: var(--accent);
+    text-align: right;
+}
+
+dd {
+    margin: 0;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--text-on-brand);
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
