@@ -1,4 +1,3 @@
-/* Global variables: Union Jack red for header/footer, navy for accents */
 :root {
     --brand: #a50d25;
     --accent: #012169;
@@ -8,7 +7,6 @@
     --radius: 10px;
     --gap: 20px;
     --card-width: 260px;
-    --icon-size-small: 64px;
     --icon-size-large: 40px;
 }
 
@@ -94,10 +92,8 @@ main {
     margin: 0;
 }
 
-/* Small view: the weather icon is the SVG <img> below the heading */
 .weather-title img {
-    width: var(--icon-size-small);
-    height: var(--icon-size-small);
+    display: none;
 }
 
 dl {

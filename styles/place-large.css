@@ -46,18 +46,11 @@
         text-align: left;
     }
 
-    /* Large view: the <img> is replaced by a pseudo-element after the "Weather" heading */
-    .weather-title img {
-        display: none;
-    }
-
     .weather-title h2::after {
-        content: "";
-        display: inline-block;
-        width: var(--icon-size-large);
-        height: var(--icon-size-large);
-        margin-left: 15px;
+        content: "⛅";
+        margin-left: 10px;
+        font-size: var(--icon-size-large);
+        line-height: 1;
         vertical-align: middle;
-        background: url("../images/weather-icon.svg") center / contain no-repeat;
     }
 }
