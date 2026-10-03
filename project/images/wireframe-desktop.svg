@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960">
+  <style>
+    .box { fill: #ffffff; stroke: #555555; stroke-width: 2; }
+    .bar { fill: #d9d9d9; stroke: #555555; stroke-width: 2; }
+    .img { fill: #eeeeee; stroke: #888888; stroke-width: 1.5; }
+    .x { stroke: #aaaaaa; stroke-width: 1.5; }
+    .line { fill: #bbbbbb; }
+    text { font-family: Arial, Helvetica, sans-serif; fill: #333333; }
+    .label { font-size: 20px; font-weight: bold; }
+    .small { font-size: 16px; }
+  </style>
+
+  <!-- Page -->
+  <rect class="box" x="1" y="1" width="1198" height="958"/>
+
+  <!-- Header: logo, site name, navigation -->
+  <rect class="bar" x="1" y="1" width="1198" height="80"/>
+  <circle class="img" cx="65" cy="41" r="24"/>
+  <text class="small" x="48" y="46">Logo</text>
+  <text class="label" x="105" y="48">Explore El Salvador</text>
+  <text class="small" x="760" y="46">Home</text>
+  <text class="small" x="850" y="46">Destinations</text>
+  <text class="small" x="990" y="46">Find a Destination</text>
+
+  <!-- Hero image with heading and button -->
+  <rect class="img" x="40" y="100" width="1120" height="300"/>
+  <line class="x" x1="40" y1="100" x2="1160" y2="400"/>
+  <line class="x" x1="1160" y1="100" x2="40" y2="400"/>
+  <rect class="box" x="400" y="190" width="400" height="50"/>
+  <text class="label" x="535" y="222">Hero Heading</text>
+  <rect class="bar" x="510" y="270" width="180" height="44" rx="8"/>
+  <text class="small" x="543" y="298">Explore Button</text>
+
+  <!-- Categories: 4 columns -->
+  <text class="label" x="40" y="445">Categories</text>
+  <rect class="box" x="40" y="462" width="265" height="180"/>
+  <rect class="img" x="52" y="474" width="241" height="125"/>
+  <text class="small" x="52" y="625">Beaches</text>
+  <rect class="box" x="325" y="462" width="265" height="180"/>
+  <rect class="img" x="337" y="474" width="241" height="125"/>
+  <text class="small" x="337" y="625">Mountains</text>
+  <rect class="box" x="610" y="462" width="265" height="180"/>
+  <rect class="img" x="622" y="474" width="241" height="125"/>
+  <text class="small" x="622" y="625">Lakes</text>
+  <rect class="box" x="895" y="462" width="265" height="180"/>
+  <rect class="img" x="907" y="474" width="241" height="125"/>
+  <text class="small" x="907" y="625">Cultural Places</text>
+
+  <!-- Featured destination: image left, text right -->
+  <text class="label" x="40" y="690">Featured Destination</text>
+  <rect class="img" x="40" y="706" width="540" height="160"/>
+  <line class="x" x1="40" y1="706" x2="580" y2="866"/>
+  <line class="x" x1="580" y1="706" x2="40" y2="866"/>
+  <rect class="line" x="620" y="716" width="540" height="10"/>
+  <rect class="line" x="620" y="738" width="500" height="10"/>
+  <rect class="line" x="620" y="760" width="420" height="10"/>
+  <rect class="bar" x="620" y="800" width="200" height="44" rx="8"/>
+  <text class="small" x="650" y="828">Find a Destination</text>
+
+  <!-- Footer -->
+  <rect class="bar" x="1" y="890" width="1198" height="69"/>
+  <text class="small" x="40" y="930">© Name, El Salvador</text>
+  <text class="small" x="900" y="930">References · Last Modified</text>
+</svg>
