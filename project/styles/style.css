@@ -163,10 +163,6 @@ input[type="submit"]:hover {
     padding: 10px 15px;
 }
 
-.welcome {
-    border-left: 5px solid var(--green);
-}
-
 .welcome:empty,
 .tip:empty {
     display: none;
