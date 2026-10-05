@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Explore El Salvador</title>
+    <meta name="description" content="Discover the best beaches, volcanoes, lakes, and Maya sites in El Salvador with simple travel information for every type of visitor.">
+    <meta name="author" content="Jorge Menjivar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">Explore El Salvador</a>
+        <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">☰</button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="find.html">Find a Destination</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero-small.webp" srcset="images/hero-small.webp 700w, images/hero-large.webp 1400w" sizes="(min-width: 1100px) 1100px, 90vw" alt="Lake Coatepeque seen from the green hills above it" width="700" height="450" fetchpriority="high">
+            <div class="hero-text">
+                <h1>Discover El Salvador</h1>
+                <p>Beaches, volcanoes, lakes, and Maya history, all in one small country that is easy to explore.</p>
+                <a class="button" href="destinations.html">Explore Destinations</a>
+            </div>
+        </section>
+
+        <p id="welcome" class="welcome"></p>
+
+        <section>
+            <h2>Categories</h2>
+            <div class="category-grid">
+                <a class="category-card" href="destinations.html?category=beach">
+                    <img src="images/el-tunco.webp" alt="Rock formation on El Tunco beach" loading="lazy" width="600" height="400">
+                    <h3>Beaches</h3>
+                    <p>Surf, sunsets, and warm water on the Pacific coast.</p>
+                </a>
+                <a class="category-card" href="destinations.html?category=mountain">
+                    <img src="images/izalco-volcano.webp" alt="Izalco Volcano" loading="lazy" width="600" height="400">
+                    <h3>Mountains</h3>
+                    <p>Volcano hikes, pine forests, and cooler weather.</p>
+                </a>
+                <a class="category-card" href="destinations.html?category=lake">
+                    <img src="images/lake-ilopango.webp" alt="Lake Ilopango from the air" loading="lazy" width="600" height="400">
+                    <h3>Lakes</h3>
+                    <p>Crater lakes for boat rides, kayaking, and relaxing.</p>
+                </a>
+                <a class="category-card" href="destinations.html?category=cultural">
+                    <img src="images/tazumal.webp" alt="Tazumal pyramid" loading="lazy" width="600" height="400">
+                    <h3>Cultural Places</h3>
+                    <p>Maya ruins and colonial towns full of history.</p>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Destination</h2>
+            <div id="featured" class="featured-card"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Explore El Salvador | Jorge Menjivar | San Salvador, El Salvador</p>
+        <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Recommendations | Explore El Salvador</title>
+    <meta name="description" content="See the destinations in El Salvador recommended for you based on your favorite type of place, activities, and trip length.">
+    <meta name="author" content="Jorge Menjivar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/results.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">Explore El Salvador</a>
+        <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">☰</button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="find.html">Find a Destination</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Recommendations</h1>
+        <p id="summary"></p>
+        <div id="results" class="card-grid"></div>
+        <p id="tip" class="tip"></p>
+        <p><a class="button" href="find.html">Search Again</a></p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Explore El Salvador | Jorge Menjivar | San Salvador, El Salvador</p>
+        <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

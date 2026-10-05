@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Explore El Salvador</title>
+    <meta name="description" content="Browse twelve tourist destinations in El Salvador and filter them by beaches, mountains, lakes, or cultural places to plan your next trip.">
+    <meta name="author" content="Jorge Menjivar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/destinations.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html">Explore El Salvador</a>
+        <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">☰</button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active" aria-current="page">Destinations</a></li>
+                <li><a href="find.html">Find a Destination</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Destinations</h1>
+        <p>Choose a category to see the places that match the kind of trip you want.</p>
+        <div id="filters" class="filters"></div>
+        <p id="count" class="count"></p>
+        <div id="destination-grid" class="card-grid"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Explore El Salvador | Jorge Menjivar | San Salvador, El Salvador</p>
+        <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
